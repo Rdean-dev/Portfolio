@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  background:
+    radial-gradient(circle at 60% 20%, rgba(139, 92, 246, 0.15), transparent 35%),
+    radial-gradient(circle at 25% 60%, rgba(59, 130, 246, 0.1), transparent 40%),
+    #070b14;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  padding: 30px 10%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* Reusable */
+.gradient-text {
+  display: inline-block;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+button {
+  background: linear-gradient(90deg, #8b5cf6, #ec4899);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* Hero */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 80px 10% 40px;
+  gap: 35px;
+}
+
+.home-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.home-content h4 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 0 65px rgba(59, 130, 246, 0.4);
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media img {
+  max-width: 6rem;
+  height: 28px;
+}
+
+.social-media-link:hover img {
+  transform: scale(1.2);
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Section Headings */
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* About */
+.about {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.about-title span {
+  background: linear-gradient(90deg, #4f8cff, #7c5cff, #ec4899);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-line {
+  width: 160px;
+  height: 4px;
+  margin: 0 auto 55px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f8cff, #7c5cff, #ec4899);
+}
+
+.about-card {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 28px;
+  text-align: left;
+  background:
+    radial-gradient(circle at top left, rgba(124, 92, 255, 0.12), transparent 35%),
+    radial-gradient(circle at top right, rgba(79, 140, 255, 0.1), transparent 35%),
+    #1b2336;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 40px rgba(79, 140, 255, 0.1),
+    0 0 60px rgba(139, 92, 246, 0.08),
+    0 25px 55px rgba(0, 0, 0, 0.45);
+  transition: 0.35s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 55px rgba(79, 140, 255, 0.15),
+    0 0 70px rgba(139, 92, 246, 0.12),
+    0 35px 70px rgba(0, 0, 0, 0.45);
+}
+
+.about-card h3 {
+  font-size: 2rem;
+  color: #8b5cf6;
+  margin-bottom: 25px;
+}
+
+.about-card p {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #d1d5db;
+}
+
+/* Projects */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1300px;
+  margin: 120px auto;
+  padding: 0 10%;
+}
+
+.project-info,
+.project-image {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  padding-bottom: 30px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  padding-bottom: 25px;
+}
+
+.project-info a {
+  margin: 10px;
+}
+
+.project-image img,
+.project-image video {
+  max-width: 500px;
+  max-height: 480px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 35px;
+  margin: 50px;
+}

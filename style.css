@@ -19,6 +19,12 @@
   padding: 0;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background:
     radial-gradient(circle at 60% 20%, rgba(139, 92, 246, 0.15), transparent 35%),
@@ -235,12 +241,14 @@ h2 {
 }
 
 .project-info a {
+  display: inline-block;
   margin: 10px;
 }
 
 .project-image img,
 .project-image video {
   border-radius: 8px;
+  display: block;
   max-height: 480px;
   max-width: 500px;
 }
@@ -413,8 +421,11 @@ footer {
 
   .project-image img,
   .project-image video {
+    display: block;
+    height: auto;
     max-height: none;
-    max-width: 360px;
+    max-width: 100%;
+    width: 100%;
   }
 
   footer {

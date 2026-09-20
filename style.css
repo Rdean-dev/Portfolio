@@ -415,8 +415,6 @@ footer {
 }
 
 .overview-scope {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 30px;
 }
@@ -453,12 +451,33 @@ footer {
 }
 
 .redesign-card {
-  background: var(--bg-card);
+  background:
+    radial-gradient(circle at top left, rgba(124, 92, 255, 0.12), transparent 35%),
+    radial-gradient(circle at top right, rgba(79, 140, 255, 0.1), transparent 35%),
+    var(--bg-card);
+
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
+
+  box-shadow:
+    0 0 40px rgba(79, 140, 255, 0.1),
+    0 0 60px rgba(139, 92, 246, 0.08),
+    0 25px 55px rgba(0, 0, 0, 0.45);
+
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   overflow: hidden;
+
+  transition: 0.35s ease;
+}
+
+.redesign-card:hover {
+  box-shadow:
+    0 0 55px rgba(79, 140, 255, 0.15),
+    0 0 70px rgba(139, 92, 246, 0.12),
+    0 35px 70px rgba(0, 0, 0, 0.45);
+
+  transform: translateY(-6px);
 }
 
 .redesign-card:nth-child(even) .redesign-image {
@@ -517,8 +536,6 @@ footer {
 }
 
 .challenge-card {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 35px;
 }
@@ -540,6 +557,29 @@ footer {
 .challenge-card p {
   color: var(--gray-light);
   line-height: 1.8;
+}
+.portfolio-card {
+  background:
+    radial-gradient(circle at top left, rgba(124, 92, 255, 0.12), transparent 35%),
+    radial-gradient(circle at top right, rgba(79, 140, 255, 0.1), transparent 35%),
+    var(--bg-card);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 40px rgba(79, 140, 255, 0.1),
+    0 0 60px rgba(139, 92, 246, 0.08),
+    0 25px 55px rgba(0, 0, 0, 0.45);
+
+  transition: 0.35s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow:
+    0 0 55px rgba(79, 140, 255, 0.15),
+    0 0 70px rgba(139, 92, 246, 0.12),
+    0 35px 70px rgba(0, 0, 0, 0.45);
+
+  transform: translateY(-6px);
 }
 
 .case-study-outcome {
